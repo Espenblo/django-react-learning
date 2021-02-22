@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+
     #Addded
     'base.apps.BaseConfig',
     'rest_framework',
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+
     #Added
     'corsheaders.middleware.CorsMiddleware',
 
@@ -81,6 +83,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+#FOR Å FORANDRE DATABASE
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -134,4 +137,5 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = 'static/images'
 
+#FOR Å TILLATE ALLE SIDER Å KOBLE PÅ SERVEREN/LOCALHOST:8000
 CORS_ALLOW_ALL_ORIGINS = True
